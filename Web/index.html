@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="./images/ico.png" type="image.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+	
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div id="titulo">
+	<h1>Formulário Teste</h1>
+	</div>
+
+	<div id="subtitulo">
+	<p>Complete suas informações <br>
+	INSCRIÇÕES ABERTAS!</p>
+	</div>
+<br>
+
+	<div id="dados">
+<form method="POST" action="inscricao.html">
+	<div class="nome">
+		Nome completo:<br>
+	<input type="text" name="nome" placeholder="Nome Completo" required> <br><br>
+</div>
+
+	<div class="email">
+		E-mail <strong>(você usará o mesmo durante todo o curso!)</strong> <br>
+	<input type="email" name="email" placeholder="E-mail" required> <br><br>
+</div>
+
+	<div class="tel">
+		Celular/WhatsApp:<br>
+		<input type="tel" name="tel" placeholder="Celular" required> <br><br>
+	</div>
+
+	<div class="nascimento">
+		Data de Nascimento:<br>
+	<input type="date" name="date" max="2022/12/31" required> <br><br>
+</div>
+
+	</div>
+
+	<!-- Formulário Objetivo -->
+	<div class="testeObj">
+	<div id="objetivo">
+		Qual é o seu objetivo?
+		<div class="front">
+			<input type="radio" name="obj" checked>FrontEnd
+		</div>
+
+			<div class="back"> 
+				<input type="radio" name="obj">BackEnd
+			</div>
+
+			<div class="full">
+				<input type="radio" name="obj">FullStack <br><br>
+			</div>
+
+	</div>
+
+</div>
+	<!-- Formulário Processo -->
+		<div id="processo">
+			Como ficou sabendo do nosso processo seletivo?
+
+			<div class="linkedin">
+			<input type="radio" name="process" checked>Linkedin
+		</div>
+
+			<div class="facebook"> 
+				<input type="radio" name="process">Facebook
+			</div>
+
+			<div class="instagram">
+				<input type="radio" name="process">Instagram
+			</div>
+
+			<div class="indicacao">
+				<input type="radio" name="process">Indicação de alguém<br><br>
+			</div>
+
+		</div>
+
+	<!-- Formulário Tecnologia -->
+		<div id="tecnologia">
+			Conhece ou já trabalhou com alguma dessas tecnologias?
+
+			<div class="html">
+			<input type="checkbox" name="tecno">HTML
+		</div>
+
+			<div class="css"> 
+				<input type="checkbox" name="tecno">CSS
+			</div>
+
+			<div class="javascript">
+				<input type="checkbox" name="tecno">JavaScript
+			</div>
+
+			<div class="phyton">
+				<input type="checkbox" name="tecno">Phyton
+			</div>
+
+			<div class="php">
+			<input type="checkbox" name="tecno">PHP
+		</div>
+
+			<div class="java"> 
+				<input type="checkbox" name="tecno">Java
+			</div>
+
+			<div class="ruby">
+				<input type="checkbox" name="tecno">Ruby
+			</div>
+		</div>
+
+			<div id="outro">
+				Outra(s)? Qual(is)?<br>
+				<input type="text" name="tecno"> <br><br>
+			</div>
+
+
+			<!-- Politica de privacidade -->
+			<div id="polPriv">
+				Concorda com nossa <a href="https://en.wikipedia.org/wiki/Privacy_policy">Política de Privacidade</a>?  <br><br>
+		</div>
+
+		<div id="hist">
+			Conte um pouco sua história<br>
+			<textarea rows="5" cols="50"></textarea>
+		</div> <br><br>
+
+		<div id="botao">
+		<button type="submit"> Inscreva-se!
+		</button>
+		</div>
+		<br>
+		<div id="limpar">
+		<input type="reset" value="Limpar Dados!">
+	</div>
+	</form>
+</body>
+</html>
